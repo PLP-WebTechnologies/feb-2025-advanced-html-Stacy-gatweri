@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Forms example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website </h1>
+    </header>
+ <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Our sought after features</h2>
+        <ol type="i">
+            <li>Responsive Design</li>
+            <li>Easy Navigation</li>
+            <li>User-Friendly Interface</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <img src="https://images.pexels.com/photos/31008029/pexels-photo-31008029/free-photo-of-aerial-view-of-shibuya-crossing-at-night-in-tokyo.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="https://images.pexels.com/photos/30955057/pexels-photo-30955057/free-photo-of-charming-brick-street-in-historic-york-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="600">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stacy Gatweri</td>
+                    <td>123 Donholm, Nairobi</td>
+                    <td>(254) 112242723</td>
+                    <td>gatweristacy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Deborah Taura</td>
+                    <td>123 Nyali, Mombasa</td>
+                    <td>(254) 114321817</td>
+                    <td>deborahtaura@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Bab Paula</td>
+                    <td>123 Milimani, Kisumu</td>
+                    <td>(254) 112608067</td>
+                    <td>babpaula@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Matunda</td>
+                    <td>123 Westlands, Nairobi</td>
+                    <td>(254) 78990123</td>
+                    <td>emilymatunda@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Gordon</td>
+                    <td>123 Karen, Nairobi</td>
+                    <td>(254) 79011734</td>
+                    <td>michaelgordon@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit_registration" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="uganda">Uganda</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br><br>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: <a href="webbuilds@gmail.com">webbuilds.com</a></p>
+    </footer>
+
+</body>
+</html>
